@@ -8,13 +8,13 @@
 body {
     background-color: #121212;
     color: white;
-    padding: 20px;
+    padding: 10px;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 10px 0;
     border-bottom: 1px solid #2a2a2a;
     margin-bottom: 40px;
 }
@@ -23,10 +23,11 @@ nav a {
     color: #909090;
     text-decoration: none;
     font-size: 14px;
+    padding: 10px;
 }
 
 .container {
-    max-width: 2000px;
+    max-width: 1500px;
     margin: 0 auto;
     padding: 20px;
     border-radius: 8px;
@@ -34,12 +35,13 @@ nav a {
 }
 
 .content {
-    display: grid;
-    grid-template-columns: 300px 1fr;
+    display: flex;
+    flex-direction: row;
     gap: 40px;
 }
 
 .artist-card {
+    width: 50%;
     background: #282828;
     padding: 20px;
     border-radius: 8px;
@@ -49,8 +51,7 @@ nav a {
 }
 
 .artist-card img {
-    width: 100%;
-    height: auto;
+    height: 300px;
     aspect-ratio: 1;
     border-radius: 50%;
     margin-bottom: 16px;
@@ -73,11 +74,12 @@ nav a {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    width: 50%;
 }
 
 .track {
     display: flex;
-    align-items: center;
+    align-items: left;
     padding: 8px;
     border-radius: 4px;
     transition: background-color 0.2s;
@@ -129,15 +131,18 @@ h1 {
 .section-title {
     font-size: 24px;
     margin-bottom: 20px;
+    margin-top: 30px;
 }
 
 
 .album {
     background: #181818;
-    width: 200px;
     padding: 16px;
     border-radius: 8px;
-    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
 }
 
 .album img {
@@ -151,8 +156,10 @@ h1 {
     background: #181818;
     border-radius: 8px;
     padding: 24px;
-    margin-top: 20px;
     max-width: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .more-info img {
@@ -172,7 +179,7 @@ h1 {
     background: #1DB954;
     color: white;
     padding: 8px 16px;
-    border-radius: 20px;
+    border-radius: 60px;
     font-weight: 500;
 }
 
@@ -198,6 +205,8 @@ h1 {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
 }
 
 .publisher {
