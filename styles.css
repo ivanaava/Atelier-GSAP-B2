@@ -26,6 +26,7 @@ nav a {
     padding: 10px;
 }
 
+/* Main/Container du site pour mettre les informations de l'artiste comme le profil ou les titres principaux */
 .container {
     max-width: 1500px;
     margin: 0 auto;
@@ -70,6 +71,7 @@ nav a {
     margin-left: 2px;
 }
 
+/* Les titres principaux de l'artiste positionnés comme sur Spotify */
 .tracks {
     display: flex;
     flex-direction: column;
@@ -79,7 +81,7 @@ nav a {
 
 .track {
     display: flex;
-    align-items: left;
+    align-items: center;
     padding: 8px;
     border-radius: 4px;
     transition: background-color 0.2s;
@@ -103,16 +105,22 @@ nav a {
 .track-title {
     font-weight: 500;
     margin-bottom: 4px;
+    align-items: end;
 }
 
 .track-artist {
     font-size: 14px;
     color: #909090;
+    position: absolute;
 }
 
 .track-duration {
     color: #909090;
     font-size: 14px;
+    display: flex;
+    align-self: self-end;
+    position: absolute;
+    right : 5%;
 }
 
 .explicit {
@@ -132,9 +140,10 @@ h1 {
     font-size: 24px;
     margin-bottom: 20px;
     margin-top: 30px;
+
 }
 
-
+/* Animation de tous les albums de Childish Gambino avec GSAP après */
 .album {
     background: #181818;
     padding: 16px;
@@ -143,6 +152,9 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     width: 30%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
 }
 
 .album img {
@@ -152,6 +164,7 @@ h1 {
     border-radius: 4px;
 }
 
+/* Plus d'infos comme la biographie comme sur Spotify */
 .more-info {
     background: #181818;
     border-radius: 8px;
@@ -223,4 +236,12 @@ h1 {
     height: 24px;
     border-radius: 50%;
     margin: 0;
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: center;
+    transition: 0.25s;
 }
