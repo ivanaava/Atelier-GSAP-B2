@@ -145,39 +145,47 @@ h1 {
 
 /* Animation de tous les albums de Childish Gambino avec GSAP après */
 #albumAnimationSec2{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
     
 } 
 
-.album-camp {
+
+.album-camp{
     opacity: 0;
+    width: 30%;
 }
 
 .album-camp-delux{
     opacity: 0;
+    width: 30%;
 }
 
 .album-because{
     opacity: 0;
+    width: 30%;
 }
 
 .album-kawai{
     opacity: 0;
+    width: 30%;
 }
 
-.album-awakenmylove{
+.album-awakenemylove{
     opacity: 0;
+    width: 30%;
 }
 
 .album-astavista{
     opacity: 0;
+    width: 30%;
 }
 
 .album-bandostne{
     opacity: 0;
+    width: 30%;
 }
 
 .album {

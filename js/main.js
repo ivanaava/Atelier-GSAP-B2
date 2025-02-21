@@ -37,13 +37,13 @@ mm.add({
         }
     })
     
-    tlSec2.to(".album-camp", {x: 100, duration: 1, opacity: 1,})
-        .to(".album-camp-deluxe", {x: 100, duration: 1, opacity: 1,})
+    tlSec2.to(".album-camp", {x: 830, duration: 1, opacity: 1,})
+        .to(".album-camp-deluxe", {x: 830, duration: 1, opacity: 1,})
         .to(".album-because", {x: 200, duration: 1, opacity: 1,})
-        .to("album-kawai", {x: 300, duration: 1, opacity: 1,})
-        .to("album-awakenmylove", {x: 400, duration: 1, opacity: 1,})
-        .to("album-astavista", {x: 500, duration: 1, opacity: 1,})
-        .to("album-bandostne", {x: 600, duration: 1, opacity: 1,});
+        .to("album-kawai", {x: 250, duration: 1, opacity: 1,})
+        .to("album-awakenemylove", {x: 300, duration: 2, opacity: 1,})
+        .to("album-astavista", {x: 350, duration: 1, opacity: 1,})
+        .to("album-bandostne", {x: 400, duration: 1, opacity: 1,});
 
  // Section 3 : Plus d'infos : lorsque nous cliquons sur l'image le paragraphe est affiché
 // le QuerySelector permet de selectionner d'un côté l'image et de l'autre le paragraphe 
