@@ -186,6 +186,7 @@ h1 {
     align-items: center;
     gap: 24px;
     margin-bottom: 24px;
+    overflow: hidden;
 }
 
 .rank {
@@ -194,11 +195,13 @@ h1 {
     padding: 8px 16px;
     border-radius: 60px;
     font-weight: 500;
+    overflow: hidden;
 }
 
 .followers {
     color: #909090;
     font-size: 14px;
+    overflow: hidden;
 }
 
 .followers span {
@@ -206,12 +209,14 @@ h1 {
     font-size: 16px;
     display: block;
     margin-bottom: 4px;
+    overflow: hidden;
 }
 
 .bio {
     color: #D1D1D1;
     line-height: 1.6;
     margin-bottom: 16px;
+    overflow: hidden;
 }
 
 .quote {
@@ -220,6 +225,7 @@ h1 {
     margin-bottom: 24px;
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 
 .publisher {
@@ -239,6 +245,14 @@ h1 {
 }
 
 .projects {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: center;
+    transition: 0.25s;
+}
+
+.realisations {
     display: flex;
     flex-direction: row;
     gap: 1em;
