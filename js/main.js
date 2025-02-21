@@ -38,12 +38,12 @@ mm.add({
     })
     
     tlSec2.to(".album-camp", {x: 830, duration: 1, opacity: 1,})
-        .to(".album-camp-deluxe", {x: 830, duration: 1, opacity: 1,})
+        .to(".album-camp-delux", {x: 500, duration: 1, opacity: 1,})
         .to(".album-because", {x: 200, duration: 1, opacity: 1,})
-        .to("album-kawai", {x: 250, duration: 1, opacity: 1,})
-        .to("album-awakenemylove", {x: 300, duration: 2, opacity: 1,})
-        .to("album-astavista", {x: 350, duration: 1, opacity: 1,})
-        .to("album-bandostne", {x: 400, duration: 1, opacity: 1,});
+        .to(".album-kawai", {x: -120, duration: 1, opacity: 1,})
+        .to(".album-awakenemylove", {x: -430, duration: 2, opacity: 1,})
+        .to(".album-astavista", {x: -750, duration: 1, opacity: 1,})
+        .to(".album-bandostne", {x: -1075, duration: 1, opacity: 1,});
 
  // Section 3 : Plus d'infos : lorsque nous cliquons sur l'image le paragraphe est affiché
 // le QuerySelector permet de selectionner d'un côté l'image et de l'autre le paragraphe 
@@ -55,17 +55,17 @@ mm.add({
     image.addEventListener("click", () => {
       if (!isVisible) {
         gsap.to(hiddenText, { 
-          opacity: 1, 
-          maxHeight: 500, 
-          duration: 0.5, 
-          ease: "power2.out" 
-        });
-      } else {
-        gsap.to(hiddenText, { 
           opacity: 0, 
           maxHeight: 0, 
           duration: 0.5, 
           ease: "power2.in" 
+        });
+      } else {
+        gsap.to(hiddenText, { 
+          opacity: 1, 
+          maxHeight: 500, 
+          duration: 0.5, 
+          ease: "power2.out" 
         });
       }
       isVisible = !isVisible;
