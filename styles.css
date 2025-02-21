@@ -144,6 +144,42 @@ h1 {
 }
 
 /* Animation de tous les albums de Childish Gambino avec GSAP après */
+#albumAnimationSec2{
+    height: 100vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+} 
+
+.album-camp {
+    opacity: 0;
+}
+
+.album-camp-delux{
+    opacity: 0;
+}
+
+.album-because{
+    opacity: 0;
+}
+
+.album-kawai{
+    opacity: 0;
+}
+
+.album-awakenmylove{
+    opacity: 0;
+}
+
+.album-astavista{
+    opacity: 0;
+}
+
+.album-bandostne{
+    opacity: 0;
+}
+
 .album {
     background: #181818;
     padding: 16px;
@@ -151,18 +187,12 @@ h1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
+    width: 80%;
     display: flex;
     flex-direction: row;
     overflow: hidden;
 }
 
-.album img {
-    width: 100%;
-    aspect-ratio: 1;
-    margin-bottom: 16px;
-    border-radius: 4px;
-}
 
 /* Plus d'infos comme la biographie comme sur Spotify */
 .more-info {
@@ -244,6 +274,7 @@ h1 {
     margin: 0;
 }
 
+/* Les projets cinématographiques de Donald Glover */
 .projects {
     display: flex;
     flex-direction: row;

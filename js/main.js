@@ -23,15 +23,35 @@ mm.add({
         }
     })
     
+})
     // Section 2 : Albums
 
+    let tlSec2 = gsap.timeline({
+        scrollTrigger: {
+            trigger: '#albumAnimationSec2',
+            pin: true, 
+            start: 'top 0%', 
+            end: '+=1000', 
+            scrub: 1, 
+            pin: true,
+        }
+    })
+    
+    tlSec2.to(".album-camp", {x: 100, duration: 1, opacity: 1,})
+        .to(".album-camp-deluxe", {x: 100, duration: 1, opacity: 1,})
+        .to(".album-because", {x: 200, duration: 1, opacity: 1,})
+        .to("album-kawai", {x: 300, duration: 1, opacity: 1,})
+        .to("album-awakenmylove", {x: 400, duration: 1, opacity: 1,})
+        .to("album-astavista", {x: 500, duration: 1, opacity: 1,})
+        .to("album-bandostne", {x: 600, duration: 1, opacity: 1,});
 
-    // Section 3 : Plus d'infos
-
+ // Section 3 : Plus d'infos : lorsque nous cliquons sur l'image le paragraphe est affiché
+// le QuerySelector permet de selectionner d'un côté l'image et de l'autre le paragraphe 
     const image = document.querySelector(".image-cg");
     const hiddenText = document.querySelector(".paragraph");
     let isVisible = false;
     
+// La commande "IsVisible" permet de mettre "if else" dont si nous appuyons sur l'image le paragraphe sera visible sinon la paragraphe restera caché"
     image.addEventListener("click", () => {
       if (!isVisible) {
         gsap.to(hiddenText, { 
@@ -50,7 +70,6 @@ mm.add({
       }
       isVisible = !isVisible;
     });
-})
 
 // Section 4 : Films où Donald Glover est présent : Timeline en décalage
 
@@ -65,7 +84,7 @@ tl.to('.movies', {x :100, stagger : 0.1,})
 .to('movies', {x :-100, stagger : 0.1,})
 
 
-// Section 5 : Films que Donald Glover a réalisé : effet de mouvement léger
+    // Section 5 : Films que Donald Glover a réalisé : effet de mouvement léger
 
 document.addEventListener('DOMContentLoaded', function () {
     gsap.to(".realisations", {
